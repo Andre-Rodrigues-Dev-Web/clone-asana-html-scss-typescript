@@ -97,6 +97,11 @@
   }
 }
 
+.container-input-icon {
+  display: flex;
+  align-items: center;
+}
+
 .layout {
   background-color: #1E1F21;
   min-height: 100vh;
@@ -127,6 +132,13 @@
   max-width: 30%;
   min-width: 30%;
 }
+.layout .topo .container-topo .form-search button {
+  background-color: transparent;
+  border: none;
+  color: #7a7979;
+  cursor: pointer;
+  margin-left: 0.45em;
+}
 .layout .topo .container-topo .form-search input {
   background-color: transparent;
   border: none;
@@ -135,6 +147,9 @@
   width: 100%;
 }
 .layout .topo .container-topo .logo {
+  display: flex;
+  align-items: center;
+  gap: 0.98em;
   width: 20%;
 }
 .layout .topo .container-topo .logo a img {
@@ -142,8 +157,14 @@
 }
 @media (width > 768px) {
   .layout .topo .container-topo .logo a img {
-    width: 30%;
+    width: 7em;
   }
+}
+.layout .topo .container-topo .logo .menu-bars {
+  background-color: transparent;
+  border: none;
+  color: #7a7979;
+  font-size: 1.2em;
 }
 .layout .container-center {
   display: grid;

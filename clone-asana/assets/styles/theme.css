@@ -137,6 +137,14 @@
 .layout .topo .container-topo .logo {
   width: 20%;
 }
+.layout .topo .container-topo .logo a img {
+  width: 30%;
+}
+@media (width > 768px) {
+  .layout .topo .container-topo .logo a img {
+    width: 30%;
+  }
+}
 .layout .container-center {
   display: grid;
   grid-template-rows: auto;

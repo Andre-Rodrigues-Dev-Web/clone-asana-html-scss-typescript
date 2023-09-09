@@ -123,6 +123,14 @@ $mobile:   600px;
             }
             .logo{
                 width: 20%;
+                a{
+                    img{
+                        width: 30%;
+                        @media(width > $desktop){
+                            width: 30%;
+                        }
+                    }
+                }
             }
         }
     }

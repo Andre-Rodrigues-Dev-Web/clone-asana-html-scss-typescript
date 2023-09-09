@@ -1,0 +1,152 @@
+* {
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+  font-size: 100%;
+  line-height: 1.5;
+  margin: 0;
+  padding: 0;
+}
+* a, * a:hover {
+  text-decoration: none;
+}
+* li {
+  list-style-type: none;
+}
+* audio, * img, * iframe, * video {
+  display: block;
+  height: auto;
+  max-width: 100% !important;
+}
+
+.btn {
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 0.2rem;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 1em;
+  padding: 0.5em 0.75em;
+}
+.btn-blue {
+  background-color: #4D9BFF;
+  border-color: #4D9BFF;
+}
+.btn-red {
+  background-color: #F06A6A;
+  border-color: #F06A6A;
+}
+
+[class^=col] {
+  padding: 0.99em;
+}
+
+@media (width > 768px) {
+  .col-1 {
+    width: 8.3333333333%;
+  }
+  .col-2 {
+    width: 16.6666666667%;
+  }
+  .col-3 {
+    width: 25%;
+  }
+  .col-4 {
+    width: 33.3333333333%;
+  }
+  .col-5 {
+    width: 41.6666666667%;
+  }
+  .col-6 {
+    width: 50%;
+  }
+  .col-7 {
+    width: 58.3333333333%;
+  }
+  .col-8 {
+    width: 66.6666666667%;
+  }
+  .col-9 {
+    width: 75%;
+  }
+  .col-10 {
+    width: 83.3333333333%;
+  }
+  .col-11 {
+    width: 91.6666666667%;
+  }
+  .col-12 {
+    width: 100%;
+  }
+}
+.row {
+  display: flex;
+  flex-direction: column;
+}
+@media (width > 768px) {
+  .row {
+    flex-direction: row;
+  }
+}
+
+.container {
+  max-width: 96%;
+}
+@media (width > 768px) {
+  .container {
+    max-width: 84vw;
+  }
+}
+
+.layout {
+  background-color: #1E1F21;
+  min-height: 100vh;
+  width: 100%;
+}
+.layout .topo {
+  background-color: #363639;
+}
+.layout .topo .container-topo {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.98em;
+}
+.layout .topo .container-topo .actions {
+  color: #eee;
+  font-size: 0.78em;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+.layout .topo .container-topo .form-search {
+  background-color: #424244;
+  border-radius: 3em;
+  -webkit-border-radius: 3em;
+  -moz-border-radius: 3em;
+  -ms-border-radius: 3em;
+  -o-border-radius: 3em;
+  max-width: 30%;
+  min-width: 30%;
+}
+.layout .topo .container-topo .form-search input {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  padding: 0.36em 0.6em;
+  width: 100%;
+}
+.layout .topo .container-topo .logo {
+  width: 20%;
+}
+.layout .container-center {
+  display: grid;
+  grid-template-rows: auto;
+}
+@media (width > 768px) {
+  .layout .container-center {
+    grid-template-columns: 15em auto;
+  }
+  .layout .container-center .sidebar {
+    background-color: #363639;
+    min-height: 90vh;
+  }
+}/*# sourceMappingURL=theme.css.map */

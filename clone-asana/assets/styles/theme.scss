@@ -1,0 +1,140 @@
+//Colors
+$black-color: #1E1F21;
+$blue-color: #4D9BFF;
+$grey-color: #565557;
+$grey-color-2: #363639;
+$green-color: #5DA283;
+$red-color: #F06A6A;
+$yellow-color: #F1BD6C;
+//vars fonts
+$GreatVibes: 'Great Vibes', cursive;
+$Kalam: 'Kalam', cursive;
+$Montserrat: 'Montserrat', sans-serif;
+$MrDafoe: 'Mr Dafoe', cursive;
+$Roboto: 'Roboto', sans-serif;
+$VinaSans: 'Vina Sans', cursive;
+//Midia queryes
+$desktop: 768px;
+$tablet:  700px;
+$mobile:   600px;
+//Reset
+* {
+    box-sizing: border-box;
+    font-family: $Montserrat;
+    font-size: 100%;
+    line-height: 1.5;
+    margin: 0;
+    padding: 0;
+    a, a:hover{
+        text-decoration: none;
+    }
+    li{
+        list-style-type: none;
+    }
+    audio, img, iframe, video{
+        display: block;
+        height: auto;
+        max-width: 100%!important;
+    }
+}
+
+//Buttons
+.btn{
+    border-style: solid;
+    border-width: 1px;
+    border-radius: .2rem;
+    cursor:pointer;
+    display: inline-block;
+    font-size: 1em;
+    padding:.5em .75em;
+    &-blue{
+        background-color: $blue-color;
+        border-color: $blue-color;
+    }
+    &-red{
+        background-color:$red-color;
+        border-color: $red-color;
+    }
+}
+
+//Grids
+[class^="col"] {
+    padding: 0.99em;
+}
+
+@media(width > $desktop){
+    $max-columns: 12;
+    @for $i from 1 through $max-columns {
+        .col-#{$i} {
+            width: (100% / $max-columns) * $i;
+        }
+    }
+}
+
+.row{
+    display:flex;
+    flex-direction: column;
+    @media(width > $desktop){
+        flex-direction: row;
+    }
+}
+
+.container{
+    max-width:96%;
+    @media(width > $desktop){
+        max-width: 84vw;
+    }
+}
+
+//layout
+.layout {
+    background-color: $black-color;
+    min-height: 100vh;
+    width: 100%;
+    .topo{
+        background-color: $grey-color-2;
+        .container-topo{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0.98em;
+            .actions{
+                color: #eee;
+                font-size: 0.78em;
+                font-weight: 600;
+                text-transform: uppercase;
+            }
+            .form-search{
+                background-color: #424244;
+                border-radius: 3em;
+                -webkit-border-radius: 3em;
+                -moz-border-radius: 3em;
+                -ms-border-radius: 3em;
+                -o-border-radius: 3em;
+                max-width: 30%;
+                min-width: 30%;
+                input{
+                    background-color: transparent;
+                    border: none;
+                    outline: none;
+                    padding: 0.36em 0.6em;
+                    width: 100%;
+                }
+            }
+            .logo{
+                width: 20%;
+            }
+        }
+    }
+    .container-center {
+        display: grid;
+        grid-template-rows: auto;
+        @media(width > $desktop) {
+            grid-template-columns: 15em auto;
+            .sidebar{
+                background-color: $grey-color-2;
+                min-height: 90vh;
+            }
+        }
+    }
+}
